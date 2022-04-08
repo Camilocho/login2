@@ -1,0 +1,176 @@
+
+
+
+header nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 12px;
+}
+
+
+
+
+
+
+
+
+.logo{
+    color: var(--color);
+}
+
+
+
+
+
+#hero{
+    height: 75vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/src/Media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#problems-amb .container{
+    text-align: center;
+    padding: 30px 20px  ;
+}
+
+
+#problems-amb .img_prob{
+    background-image: url("/src/Media/fraijelon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20em;
+    width: 100%;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+
+#problems-amb h2{
+    margin-bottom: 20px;
+}
+
+
+
+#energy {
+    background-color: rgb(30,30,30) ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#energy .type-energ{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#energy .card{
+    margin: 2em;
+    border-radius: 10px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+#energy .card:first-child{
+background-image: linear-gradient(
+    0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+)
+,url("/src/Media/no_renovable_energies.jpg");
+}
+
+#energy .card:last-child{
+    background-image: linear-gradient(
+    0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+)
+    ,url("/src/Media/renovable_energ.jpg");
+}
+
+.a-card:visited{
+color: gray;
+}
+
+#tech-growth .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+}
+
+#tech-growth h2{
+    margin-bottom: 20px;
+}
+
+@media (min-width:720px){
+    
+
+
+    header{
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero .container{
+        width: 100vh;
+    }
+
+    #problems-amb .container{
+        display: flex;
+    }
+
+    #problems-amb .prob_text{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #energy .type-energ{
+        flex-direction: row;
+    }
+}
